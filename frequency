@@ -1,0 +1,28 @@
+class freq
+{
+    char c[]={'m','a','l','a','y','a','l','a','m'};
+    int count=0,l,i;
+    void check()
+    {
+        for(i=0;i<9;i++)
+        {
+            if(c[i]=='m')
+            {
+                count++;
+            }
+        }
+    }
+    void display()
+    {
+        System.out.println("Count="+count);
+    }
+}
+public class frequency
+{
+    public static void main(String[]args)
+    {
+        freq f=new freq();
+        f.check();
+        f.display();
+    }
+}
