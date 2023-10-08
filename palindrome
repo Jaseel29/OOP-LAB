@@ -1,1 +1,37 @@
-
+class pali
+{
+    char c[]={'m','a','m'};
+    int i,p=0;
+    void check()
+    {
+        for(i=0;i<3;i++)
+        {
+            if(c[i]!=c[3-i-1])
+            {
+                p=1;
+                break;
+                
+            }
+        }
+    }
+    void display()
+    {
+        if(p==0)
+        {
+            System.out.println("Palindrome");
+        }
+        else
+        {
+            System.out.println("Not palindrome");
+        }    
+    }
+}
+public class palindrome
+{
+    public static void main(String[]args)
+    {
+        pali x=new pali();
+        x.check();
+        x.display();
+    }
+}   
